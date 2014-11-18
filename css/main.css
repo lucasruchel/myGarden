@@ -4,4 +4,19 @@ body {
 #container div:not(.container) {
   display: none; }
 
+.highleights {
+  position: absolute;
+  background-color: #FFF;
+  left: 30%;
+  transform: translateY(30%);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px #fff;
+  z-index: 2; }
+  .highleights .show {
+    width: 100px;
+    height: 100px; }
+  .highleights .video {
+    width: 480px;
+    height: 390px; }
+
 /*# sourceMappingURL=main.css.map */
