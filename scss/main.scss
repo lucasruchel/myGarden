@@ -1,28 +1,47 @@
-body{
-    background-color: #000;
-}
-#container{
-    div:not(.container){
-        display: none;
-    }
-}
-.highleights{
-    position: absolute;
-    background-color: #FFF;
-    left: 30%;
-    transform: translateY(30%);
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px #fff;
-    z-index: 2;
-    .show {
-       width: 100px;
-       height: 100px;
-    }
-    .video {
-        width: 480px;
-        height: 390px;
-    }
-}
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700);
 
-
+h1{
+    display: block;
+    
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+html, body{
+    margin:0px;
+}
+.header-title {
+    padding: 0;
+    top: 0;
+    font-family: 'Josefin Slab', serif;
+    font-size:14vw;
+    position:relative;
+    text-align: center;
+}
+.header-title{
+    margin-top: 20px;
+}
+.header-title span {
+  display: block;
+}
+.header-title .bottom {
+  color: #fff;
+  background: rgba(12,236,12,0.5);
+  padding: 15px 0 0 15px;
+}
+.header h2 span{
+  display: inline-block;
+  clear: right;
+  width: 100%;
+  font-family: "arial";
+  font-size: 2vw;
+  color: #000;
+  text-align: center;
+  
+  
+  z-index: 3;
+  opacity: 0.5;
+}
 
