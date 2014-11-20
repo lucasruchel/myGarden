@@ -1,11 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700);
 h1 {
-  display: block;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold; }
+  display: block; }
 
 html, body {
   margin: 0px; }
@@ -14,7 +9,7 @@ html, body {
   padding: 0;
   top: 0;
   font-family: 'Josefin Slab', serif;
-  font-size: 14vw;
+  font-size: 12vw;
   position: relative;
   text-align: center; }
 

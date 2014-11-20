@@ -1,69 +1,82 @@
-/*
-Error: Undefined mixin 'transform'.
-        on line 10 of /home/wheezy/public_html/myGarden/scss/nav-bar.scss, in `transform'
-        from line 10 of /home/wheezy/public_html/myGarden/scss/nav-bar.scss
+body {
+  background: #f1f1fa; }
 
-5:   margin: 140px auto 0;
-6:   font-size:0;
-7:   max-width: 560px;
-8: }
-9: .wrap {
-10:   @include transform( rotate(45deg) translate3d(0,0,0) );
-11:   display: inline-block;
-12:   @include transition(transform 300ms ease-out);
-13:   &:hover {
-14:     @include transition(transform 700ms ease-out);
-15:   @include transform( rotate(45deg) translate3d(10px,10px,0) );
+.nav-bar {
+  margin: 140px auto 0;
+  font-size: 0;
+  max-width: 560px; }
 
-Backtrace:
-/home/wheezy/public_html/myGarden/scss/nav-bar.scss:10:in `transform'
-/home/wheezy/public_html/myGarden/scss/nav-bar.scss:10
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:98:in `block in with_mixin'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:98:in `with_mixin'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `map'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/exec/sass_scss.rb:396:in `run'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/exec/base.rb:52:in `parse'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/lib/sass/exec/base.rb:19:in `parse!'
-/home/wheezy/.gem/ruby/2.1.0/gems/sass-3.4.5/bin/sass:13:in `<top (required)>'
-/home/wheezy/.gem/ruby/2.1.0/bin/sass:23:in `load'
-/home/wheezy/.gem/ruby/2.1.0/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'transform'.\A         on line 10 of /home/wheezy/public_html/myGarden/scss/nav-bar.scss, in `transform'\A         from line 10 of /home/wheezy/public_html/myGarden/scss/nav-bar.scss\A \A 5:   margin: 140px auto 0;\A 6:   font-size:0;\A 7:   max-width: 560px;\A 8: }\A 9: .wrap {\A 10:   @include transform( rotate(45deg) translate3d(0,0,0) );\A 11:   display: inline-block;\A 12:   @include transition(transform 300ms ease-out);\A 13:   &:hover {\A 14:     @include transition(transform 700ms ease-out);\A 15:   @include transform( rotate(45deg) translate3d(10px,10px,0) );"; }
+.wrap {
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+  -o-transform: rotate(45deg) translate3d(0, 0, 0);
+  transform: rotate(45deg) translate3d(0, 0, 0);
+  display: inline-block;
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  -moz-transition: -moz-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  width: 100px; }
+  .wrap:hover {
+    -webkit-transition: -webkit-transform 700ms ease-out;
+    -moz-transition: -moz-transform 700ms ease-out;
+    transition: transform 700ms ease-out;
+    -webkit-transform: rotate(45deg) translate3d(10px, 10px, 0);
+    -moz-transform: rotate(45deg) translate3d(10px, 10px, 0);
+    -ms-transform: rotate(45deg) translate3d(10px, 10px, 0);
+    -o-transform: rotate(45deg) translate3d(10px, 10px, 0);
+    transform: rotate(45deg) translate3d(10px, 10px, 0);
+    cursor: pointer; }
+  .wrap:nth-child(even) {
+    width: 40px;
+    -webkit-transform: rotate(225deg) translate3d(30px, 120px, 0);
+    -moz-transform: rotate(225deg) translate3d(30px, 120px, 0);
+    -ms-transform: rotate(225deg) translate3d(30px, 120px, 0);
+    -o-transform: rotate(225deg) translate3d(30px, 120px, 0);
+    transform: rotate(225deg) translate3d(30px, 120px, 0); }
+    .wrap:nth-child(even) .crop img {
+      -webkit-transform: skew(-20deg, -20deg) rotate(-225deg);
+      -moz-transform: skew(-20deg, -20deg) rotate(-225deg);
+      -ms-transform: skew(-20deg, -20deg) rotate(-225deg);
+      -o-transform: skew(-20deg, -20deg) rotate(-225deg);
+      transform: skew(-20deg, -20deg) rotate(-225deg); }
+    .wrap:nth-child(even):hover {
+      -webkit-transform: rotate(225deg) translate3d(40px, 130px, 0);
+      -moz-transform: rotate(225deg) translate3d(40px, 130px, 0);
+      -ms-transform: rotate(225deg) translate3d(40px, 130px, 0);
+      -o-transform: rotate(225deg) translate3d(40px, 130px, 0);
+      transform: rotate(225deg) translate3d(40px, 130px, 0); }
+
+.crop {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  -webkit-transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+  -moz-transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+  -ms-transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+  -o-transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+  transform: skew(20deg, 20deg) translate3d(0, 0, 0); }
+  .crop img {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: -50%;
+    margin-top: 36px;
+    margin-left: 36px;
+    top: -50%;
+    -webkit-transform: skew(-20deg, -20deg) rotate(-45deg);
+    -moz-transform: skew(-20deg, -20deg) rotate(-45deg);
+    -ms-transform: skew(-20deg, -20deg) rotate(-45deg);
+    -o-transform: skew(-20deg, -20deg) rotate(-45deg);
+    transform: skew(-20deg, -20deg) rotate(-45deg);
+    opacity: 0.7;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out; }
+    .crop img:hover {
+      opacity: 1; }
+
+/*# sourceMappingURL=nav-bar.css.map */
