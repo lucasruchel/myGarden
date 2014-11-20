@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,aAAc;EACV,gBAAgB,EAAE,IAAI;EACtB,qBAAO;IACT,KAAK,EAAC,OAAO;IACb,UAAU,EAAC,MAAM;IACjB,WAAW,EAAC,sBAAsB;IAClC,cAAc,EAAC,SAAS;IACxB,SAAS,EAAC,GAAG;IACb,cAAc,EAAC,KAAK;IAIpB,WAAW,EACT,+GAAgB",
+"sources": ["../scss/secoes.scss"],
+"names": [],
+"file": "secoes.css"
+}

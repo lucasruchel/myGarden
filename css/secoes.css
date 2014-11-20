@@ -1,0 +1,12 @@
+#jar-preamble {
+  background-color: #bbb; }
+  #jar-preamble h3 span {
+    color: #dbd5c5;
+    text-align: center;
+    font-family: 'Graduate', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 2px 2px 0 #333, 0.04em 0.025em #333, 0.07em 0.055em #6a7d9d; }
+
+/*# sourceMappingURL=secoes.css.map */

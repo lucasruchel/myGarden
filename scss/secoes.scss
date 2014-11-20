@@ -1,0 +1,22 @@
+$shade: #6a7d9d;
+#jar-preamble {
+    background-color: #bbb;
+    h3 span{
+  color:#dbd5c5;
+  text-align:center;
+  font-family:'Graduate', sans-serif;
+  text-transform:uppercase;
+  font-size:2em;
+  letter-spacing:0.1em;
+  $outlineAmt: 2px;
+  //margin:1em 0 1em;
+  //text shadow is position then thickness
+  text-shadow:
+    -2px -2px 0 #333,
+    2px -2px 0 #333,
+    -2px 2px 0 #333,
+    2px 2px 0 #333,
+    .040em .025em #333, //black
+    .070em .055em $shade; //blue
+    }
+}
