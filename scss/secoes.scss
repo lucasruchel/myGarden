@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
+
 $shade: #6a7d9d;
 #jar-preamble {
     background-color: #bbb;
@@ -20,3 +22,42 @@ $shade: #6a7d9d;
     .070em .055em $shade; //blue
     }
 }
+
+$back-summary: #0ea9a5;
+
+#jar-summary{
+    background: url("../public/images/back-summary.png") no-repeat right;
+    background-color: $back-summary;
+}
+#jar-summary {
+    .p1:before
+    {
+        display: inline-block;
+        font-family:'Graduate', sans-serif;
+        color: #fff;
+        width: 100vw;
+        content: "Introdução";
+        font-size: 10em;
+    }
+    .p1
+    {
+        span
+        {
+            padding: 20px 0 20px 20px;
+            
+            width: 500px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Berkshire Swash',arial;
+            font-size: 2em;
+            background-color: #47fefa;
+            margin-top: 100px;
+        }
+    }
+    .p2
+    {
+        display: none;
+    }
+}
+    

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
 #jar-preamble {
   background-color: #bbb; }
   #jar-preamble h3 span {
@@ -8,5 +10,29 @@
     font-size: 2em;
     letter-spacing: 0.1em;
     text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 2px 2px 0 #333, 0.04em 0.025em #333, 0.07em 0.055em #6a7d9d; }
+
+#jar-summary {
+  background: url("../public/images/back-summary.png") no-repeat right;
+  background-color: #0ea9a5; }
+
+#jar-summary .p1:before {
+  display: inline-block;
+  font-family: 'Graduate', sans-serif;
+  color: #fff;
+  width: 100vw;
+  content: "Introdução";
+  font-size: 10em; }
+#jar-summary .p1 span {
+  padding: 20px 0 20px 20px;
+  width: 500px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Berkshire Swash',arial;
+  font-size: 2em;
+  background-color: #47fefa;
+  margin-top: 100px; }
+#jar-summary .p2 {
+  display: none; }
 
 /*# sourceMappingURL=secoes.css.map */

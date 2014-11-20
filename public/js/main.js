@@ -93,7 +93,7 @@ function changeHeaderTitle(){
    }
     for (i=0;i<7;i++) {
         element = document.querySelector(objects.informations[i].link);
-        element.style.height = "100vh";
+        element.style.height = "600px";
     }
  }
  function addScrollListener(){
