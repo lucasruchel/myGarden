@@ -35,4 +35,21 @@
 #jar-summary .p2 {
   display: none; }
 
+#jar-preamble {
+  background: url(../public/images/back-preamble.png) no-repeat left;
+  background-color: #bd2121;
+  color: #fff; }
+
+#jar-explanation {
+  background-color: #af4aaa; }
+
+#jar-participation {
+  background-color: #f6a101; }
+
+#jar-benefits {
+  background-color: #7b92ff; }
+
+#jar-requirements {
+  background-color: #56c872; }
+
 /*# sourceMappingURL=secoes.css.map */

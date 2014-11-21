@@ -1,7 +1,8 @@
 changeHeaderTitle();
 createNav();
 resizeElements();
-addScrollListener();
+addMenuClass();
+
 
 
 function changeHeaderTitle(){
@@ -96,11 +97,8 @@ function changeHeaderTitle(){
         element.style.height = "600px";
     }
  }
- function addScrollListener(){
-     corpo = document.querySelector("body");
-     corpo.onscroll = ancoraListener();
- }
- function ancoraListener(){
-     
+ function addMenuClass(){
+     element = document.querySelector("#jar-link-list");
+     //element.classList.add("pushy");
  }
  
