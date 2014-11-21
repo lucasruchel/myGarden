@@ -1,8 +1,12 @@
 changeHeaderTitle();
 createNav();
 resizeElements();
-addMenuClass();
 
+addElementsClass("#jar-requirements");
+
+$("#jar-requirements .display-list .show").click(function (){
+    alert("Hello");
+});
 
 
 function changeHeaderTitle(){
@@ -62,6 +66,7 @@ function changeHeaderTitle(){
         img.classList.add();
         img.src = objects.informations[i].image;
         img.alt = objects.informations[i].alt;
+        img.title = objects.informations[i].alt;
         
         wrap.appendChild(crop);
         crop.appendChild(link);
@@ -72,33 +77,32 @@ function changeHeaderTitle(){
     element.appendChild(container);
  }
  function resizeElements(){
-    viewportwidth=0;
-    viewportheight=0;
-     if (typeof window.innerWidth != 'undefined') {
-       viewportwidth = window.innerWidth;
-       viewportheight = window.innerHeight;
-      }
-
-   // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
-
-   else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0) {
-       viewportwidth = document.documentElement.clientWidth;
-       viewportheight = document.documentElement.clientHeight;
-   }
-
-   // older versions of IE
-
-   else {
-       viewportwidth = document.getElementsByTagName('body')[0].clientWidth;
-       viewportheight = document.getElementsByTagName('body')[0].clientHeight;
-   }
     for (i=0;i<7;i++) {
         element = document.querySelector(objects.informations[i].link);
-        element.style.height = "600px";
+        element.classList.add("secoes");
     }
  }
- function addMenuClass(){
-     element = document.querySelector("#jar-link-list");
-     //element.classList.add("pushy");
+ function addElementsClass(selector){
+     element = document.querySelector(selector);
+     
+     container = document.createElement("div");
+     container.classList.add("display-list");
+     
+     for(i = 0;i<4;i++){
+        button = document.createElement("span");
+        
+
+        
+        button.classList.add("show");
+
+
+        container.appendChild(button);
+     }
+     element.appendChild(container);
+     
+     
+ }
+ function teste(){
+     alert("Hello");
  }
  

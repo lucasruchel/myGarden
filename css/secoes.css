@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+.secoes {
+  min-height: 600px;
+  min-width: 100%;
+  display: inline-block; }
+
 #jar-preamble {
   background-color: #bbb; }
   #jar-preamble h3 span {
@@ -50,6 +57,41 @@
   background-color: #7b92ff; }
 
 #jar-requirements {
-  background-color: #56c872; }
+  background: url(../public/images/back-requirements.png) no-repeat left;
+  background-color: #56c872;
+  opacity: 0.8;
+  color: #fff; }
+  #jar-requirements h3 {
+    font-size: 4em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: inline-block; }
+  #jar-requirements p {
+    display: none;
+    width: 500px;
+    text-align: justify;
+    padding-right: 100px;
+    float: right;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive; }
+  #jar-requirements p:nth-child(2) {
+    display: block !important; }
+  #jar-requirements .display-list {
+    width: 50px;
+    display: inline-block;
+    margin: 100px auto 0 100px; }
+    #jar-requirements .display-list .show {
+      margin-bottom: 20px;
+      color: #fff;
+      text-align: center;
+      display: block;
+      height: 50px;
+      background-color: #000;
+      border-radius: 50%; }
+      #jar-requirements .display-list .show:hover {
+        background-color: #4ec3c8;
+        cursor: pointer; }
+
+#jar-selection {
+  background-color: #56c4c8; }
 
 /*# sourceMappingURL=secoes.css.map */
