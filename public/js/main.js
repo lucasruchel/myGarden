@@ -3,11 +3,39 @@ createNav();
 resizeElements();
 
 addElementsClass("#jar-requirements");
+$('.preamble').append($('<div>', {class: 'explanations'}));
+$('.preamble p').detach().appendTo('.explanations');
 
-$("#jar-requirements .display-list .show").click(function (){
-    alert("Hello");
+$('.explanation').append($('<div>', {class: 'explanations'}));
+$('.explanation p').detach().appendTo('.explanations');
+
+$('.participation').append($('<div>', {class: 'background'}));
+
+$('.participation').append($('<div>', {class: 'explanations'}));
+$('.participation p').detach().appendTo('.explanations');
+
+$("#jar-requirements .display-list .show:nth-child(1)").hover(function (){
+    
+    $('#jar-requirements p').hide(0,function (){
+        $('#jar-requirements p:nth-child(2)').show(2);
+    });
+    
 });
-
+$("#jar-requirements .display-list .show:nth-child(2)").hover(function (){
+    $('#jar-requirements p').hide(0,function (){
+        $('#jar-requirements p:nth-child(3)').show(5);
+    });
+});
+$("#jar-requirements .display-list .show:nth-child(3)").hover(function (){
+    $('#jar-requirements p').hide(0,function (){
+        $('#jar-requirements p:nth-child(4)').show(5);
+    });
+});
+$("#jar-requirements .display-list .show:nth-child(4)").hover(function (){
+    $('#jar-requirements p').hide(0,function (){
+        $('#jar-requirements p:nth-child(5)').show(5);
+    });
+});
 
 function changeHeaderTitle(){
     var element = document.querySelector(".header h1");

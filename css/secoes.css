@@ -2,21 +2,17 @@
 @import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Mountains+of+Christmas:700);
+a {
+  text-decoration: none;
+  color: #5901ff;
+  text-height: .3em; }
+
 .secoes {
   min-height: 600px;
+  max-width: 100%;
   min-width: 100%;
   display: inline-block; }
-
-#jar-preamble {
-  background-color: #bbb; }
-  #jar-preamble h3 span {
-    color: #dbd5c5;
-    text-align: center;
-    font-family: 'Graduate', sans-serif;
-    text-transform: uppercase;
-    font-size: 2em;
-    letter-spacing: 0.1em;
-    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 2px 2px 0 #333, 0.04em 0.025em #333, 0.07em 0.055em #6a7d9d; }
 
 #jar-summary {
   background: url("../public/images/back-summary.png") no-repeat right;
@@ -28,7 +24,8 @@
   color: #fff;
   width: 100vw;
   content: "Introdução";
-  font-size: 10em; }
+  font-size: 8em;
+  padding-left: 50px; }
 #jar-summary .p1 span {
   padding: 20px 0 20px 20px;
   width: 500px;
@@ -46,18 +43,102 @@
   background: url(../public/images/back-preamble.png) no-repeat left;
   background-color: #bd2121;
   color: #fff; }
+  #jar-preamble h3 span {
+    color: #dbd5c5;
+    text-align: center;
+    font-family: 'Graduate', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-shadow: -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333, 2px 2px 0 #333, 0.04em 0.025em #333, 0.07em 0.055em #6a7d9d; }
+  #jar-preamble > h3 {
+    text-align: center; }
+  #jar-preamble .explanations {
+    padding-right: 80px;
+    display: inline-block;
+    float: right;
+    padding-top: 50px;
+    min-width: 400px;
+    letter-spacing: 0.1em;
+    max-width: 600px;
+    text-align: justify;
+    font-family: 'Graduate', sans-serif; }
+    #jar-preamble .explanations p {
+      margin-bottom: 50px; }
 
 #jar-explanation {
-  background-color: #af4aaa; }
+  background: url(../public/images/back-explanation.png) no-repeat right 100px;
+  background-color: #af4aaa;
+  opacity: 0.6;
+  color: #fff; }
+  #jar-explanation h3 {
+    font-size: 5em;
+    text-align: center; }
+  #jar-explanation .explanations {
+    padding-left: 80px;
+    display: inline-block;
+    float: left;
+    padding-top: 50px;
+    min-width: 400px;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+    max-width: 600px;
+    text-align: justify;
+    font-family: 'Graduate', sans-serif; }
+    #jar-explanation .explanations p {
+      margin-bottom: 50px; }
 
 #jar-participation {
-  background-color: #f6a101; }
+  background-color: #f6a101;
+  color: #fff; }
+  #jar-participation h3 {
+    font-size: 5em;
+    text-align: center; }
+  #jar-participation .background {
+    position: absolute;
+    margin: 20px 0 0 30px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url(../public/images/back-participation); }
+  #jar-participation .explanations {
+    padding-right: 80px;
+    display: inline-block;
+    float: right;
+    padding-top: 50px;
+    min-width: 400px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    max-width: 600px;
+    text-align: justify;
+    font-family: 'Graduate', sans-serif; }
+    #jar-participation .explanations p {
+      margin-bottom: 50px; }
 
 #jar-benefits {
-  background-color: #7b92ff; }
+  background: url(../public/images/back-beneficts.png) no-repeat right 100px;
+  background-color: #7b92ff;
+  display: inline-block; }
+  #jar-benefits > * {
+    padding-left: 50px; }
+  #jar-benefits h3 > span {
+    font-family: "Mountains of Christmas",cursive;
+    font-size: 6em;
+    color: #fff; }
+  #jar-benefits > p {
+    padding: 20px 20px 20px 20px;
+    font-family: "Mountains of Christmas",cursive;
+    background-color: #2c16c4;
+    color: #fff;
+    display: box;
+    max-width: 500px;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 1.5em;
+    box-shadow: #000 5px 10px 30px; }
 
 #jar-requirements {
-  background: url(../public/images/back-requirements.png) no-repeat left;
+  background: url(../public/images/back-requirements.png) no-repeat 20px 20px;
   background-color: #56c872;
   opacity: 0.8;
   color: #fff; }
@@ -73,8 +154,6 @@
     float: right;
     font-size: 2em;
     font-family: 'Pacifico', cursive; }
-  #jar-requirements p:nth-child(2) {
-    display: block !important; }
   #jar-requirements .display-list {
     width: 50px;
     display: inline-block;
