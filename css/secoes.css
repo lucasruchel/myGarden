@@ -174,4 +174,10 @@ a {
 #jar-selection {
   background-color: #56c4c8; }
 
+#jar-footer {
+  display: none; }
+
+.none {
+  display: none; }
+
 /*# sourceMappingURL=secoes.css.map */

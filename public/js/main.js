@@ -37,6 +37,10 @@ $("#jar-requirements .display-list .show:nth-child(4)").hover(function (){
     });
 });
 
+$("#jar-selection").addClass("none");
+$("#jar-archives").addClass("none");
+$("#jar-resources").addClass("none");
+
 function changeHeaderTitle(){
     var element = document.querySelector(".header h1");
     
@@ -72,14 +76,13 @@ function changeHeaderTitle(){
                                 {"image" : "'+path+'img1.jpg","link"  : "#jar-explanation","alt" : "explicacao"},\
                                 {"image" : "'+path+'img1.jpg","link"  : "#jar-participation","alt" : "participacao"},\
                                 {"image" : "'+path+'img1.jpg","link"  : "#jar-benefits","alt" : "beneficios"},\
-                                {"image" : "'+path+'img1.jpg","link"  : "#jar-requirements","alt" : "requisitos"},\
-                                {"image" : "'+path+'img1.jpg","link"  : "#jar-preamble","alt" : "descricao"}\
+                                {"image" : "'+path+'img1.jpg","link"  : "#jar-requirements","alt" : "requisitos"}\
                                 ]}';
       
             
      objects = JSON.parse(data);
      
-    for (i=0;i<7;i++){
+    for (i=0;i<objects.informations.length;i++){
         wrap = document.createElement("div");
         wrap.classList.add("wrap");
         
@@ -105,7 +108,7 @@ function changeHeaderTitle(){
     element.appendChild(container);
  }
  function resizeElements(){
-    for (i=0;i<7;i++) {
+    for (i=0;i<objects.informations.length;i++) {
         element = document.querySelector(objects.informations[i].link);
         element.classList.add("secoes");
     }
