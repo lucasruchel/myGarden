@@ -8,16 +8,11 @@ a {
   color: #5901ff;
   text-height: .3em; }
 
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  vertical-align: baseline; }
-
 .secoes {
   min-height: 600px;
   max-width: 100%;
-  min-width: 100%; }
+  min-width: 100%;
+  display: inline-block; }
 
 #jar-summary {
   background: url("../public/images/back-summary.png") no-repeat right;
@@ -150,6 +145,7 @@ a {
   #jar-requirements h3 {
     font-size: 4em;
     font-family: 'PT Sans Narrow', sans-serif;
+    margin-left: 40px;
     display: inline-block; }
   #jar-requirements p {
     display: none;

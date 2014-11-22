@@ -12,18 +12,11 @@ a{
     text-height: .3em;
 }
 
-* {
-    margin:0;
-    padding:0;
-    list-style:none;
-    vertical-align:baseline;
-
-}
-
 .secoes{
     min-height: 600px;
     max-width: 100%;
     min-width: 100%;
+    display: inline-block;
 }
 $back-summary: #0ea9a5;
 
@@ -153,7 +146,7 @@ $back-summary: #0ea9a5;
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        background: url(../public/images/back-participation.jpg );
+        background: url(../public/images/back-participation.jpg);
     }
     .explanations{
         padding-right: 80px;
@@ -214,7 +207,7 @@ $back-summary: #0ea9a5;
     h3 {
         font-size: 4em;
         font-family: 'PT Sans Narrow', sans-serif;
-        
+        margin-left: 40px;
         display: inline-block;
         
     }
