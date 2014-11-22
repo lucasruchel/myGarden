@@ -5,17 +5,25 @@
 @import "bourbon/bourbon";
 
 $shade: #6a7d9d;
+
 a{
     text-decoration: none;
     color: #5901ff;
     text-height: .3em;
 }
 
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    vertical-align:baseline;
+
+}
+
 .secoes{
     min-height: 600px;
     max-width: 100%;
     min-width: 100%;
-    display: inline-block;
 }
 $back-summary: #0ea9a5;
 
@@ -145,7 +153,7 @@ $back-summary: #0ea9a5;
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        background: url(../public/images/back-participation);
+        background: url(../public/images/back-participation.jpg);
     }
     .explanations{
         padding-right: 80px;

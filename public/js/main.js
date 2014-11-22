@@ -91,7 +91,7 @@ function changeHeaderTitle(){
         link.href = objects.informations[i].link;
         
         img = document.createElement("img");
-        img.classList.add();
+       
         img.src = objects.informations[i].image;
         img.alt = objects.informations[i].alt;
         img.title = objects.informations[i].alt;
