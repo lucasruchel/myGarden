@@ -1,0 +1,261 @@
+@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Mountains+of+Christmas:700);
+@import "bourbon/bourbon";
+
+$shade: #6a7d9d;
+<<<<<<< HEAD
+a{
+    text-decoration: none;
+    color: #5901ff;
+    text-height: .3em;
+=======
+
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    vertical-align:baseline;
+>>>>>>> 710f5bdf75a2a2065a38ddd97d273eeefeb29031
+}
+
+.secoes{
+    min-height: 600px;
+    max-width: 100%;
+    min-width: 100%;
+}
+$back-summary: #0ea9a5;
+
+#jar-summary{
+    background: url("../public/images/back-summary.png") no-repeat right;
+    background-color: $back-summary;
+}
+#jar-summary {
+    .p1:before
+    {
+        display: inline-block;
+        font-family:'Graduate', sans-serif;
+        color: #fff;
+        width: 100vw;
+        content: "Introdução";
+        font-size: 8em;
+        padding-left: 50px;
+    }
+    .p1
+    {
+        span
+        {
+            padding: 20px 0 20px 20px;
+            
+            width: 500px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Berkshire Swash',arial;
+            font-size: 2em;
+            background-color: #47fefa;
+            margin-top: 100px;
+        }
+    }
+    .p2
+    {
+        display: none;
+    }
+}
+
+#jar-preamble
+{
+    background: url(../public/images/back-preamble.png) no-repeat left;
+    background-color: #bd2121;
+    color: #fff;
+    h3 span{
+        color:#dbd5c5;
+        text-align:center;
+        font-family:'Graduate', sans-serif;
+        text-transform:uppercase;
+        font-size:3em;
+        letter-spacing:0.1em;
+        $outlineAmt: 2px;
+        text-shadow:
+        -2px -2px 0 #333,
+        2px -2px 0 #333,
+        -2px 2px 0 #333,
+        2px 2px 0 #333,
+        .040em .025em #333, //black
+        .070em .055em $shade; //blue
+    }
+    
+    & > h3 {
+        text-align: center;
+    }
+    
+    .explanations{
+        padding-right: 80px;
+        display: inline-block;
+        float: right;
+        padding-top: 50px;
+        min-width: 400px;
+        letter-spacing:0.1em;
+        max-width: 600px;
+        text-align: justify;
+        font-family:'Graduate', sans-serif;
+        p{
+            margin-bottom: 50px;
+        }
+        
+    }
+}
+
+#jar-explanation
+{
+    
+    background: url(../public/images/back-explanation.png) no-repeat right 100px;
+    background-color: #af4aaa;
+    opacity: 0.6;
+    color: #fff;
+    h3{
+        
+        font-size: 5em;
+        text-align: center;
+    }
+    
+    .explanations {
+        padding-left: 80px;
+        display: inline-block;
+        float: left;
+        padding-top: 50px;
+        min-width: 400px;
+        letter-spacing:0.1em;
+        line-height: 30px;
+        max-width: 600px;
+        text-align: justify;
+        font-family:'Graduate', sans-serif;
+        p{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+#jar-participation
+{
+    background-color: #f6a101;
+    color: #fff;
+    h3{
+        
+        font-size: 5em;
+        text-align: center;
+    }
+    .background{
+        position: absolute;
+        
+        margin: 20px 0 0 30px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: url(../public/images/back-participation);
+    }
+    .explanations{
+        padding-right: 80px;
+        display: inline-block;
+        float: right;
+        padding-top: 50px;
+        min-width: 400px;
+        line-height: 30px;
+        letter-spacing:0.1em;
+        max-width: 600px;
+        text-align: justify;
+        font-family:'Graduate', sans-serif;
+        p{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+#jar-benefits
+{
+    background: url(../public/images/back-beneficts.png) no-repeat right 100px;
+    background-color: #7b92ff;
+    display: inline-block;
+    
+    & > *{
+        padding-left: 50px;
+    }
+    
+    h3{
+        & > span{
+            
+          font-family: "Mountains of Christmas",cursive;
+          font-size: 6em;
+          color: #fff;
+      } 
+    }
+    
+    & > p{
+        
+        padding: 20px 20px 20px 20px;
+        font-family: "Mountains of Christmas",cursive;
+        background-color: #2c16c4;
+        color: #fff;
+        display: box;
+        max-width: 500px;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 1.5em;
+        box-shadow: #000 5px 10px 30px;
+    }
+}
+#jar-requirements
+{
+    background: url(../public/images/back-requirements.png) no-repeat 20px 20px;
+    background-color: #56c872;
+    opacity: 0.8;
+    color: #fff;
+    h3 {
+        font-size: 4em;
+        font-family: 'PT Sans Narrow', sans-serif;
+        
+        display: inline-block;
+        
+    }
+    p{
+        display: none;
+        width: 500px;
+        text-align: justify;
+        padding-right: 100px;
+        float: right;
+        font-size: 2em;
+        font-family: 'Pacifico', cursive;
+    }
+    .display-list{
+        width: 50px;
+        display: inline-block;
+        margin: 100px auto 0 100px;    
+        .show{
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            
+            display: block;
+            
+            height: 50px;
+            background-color: #000;
+            border-radius: 50%;
+        
+            &:hover{
+                background-color: #4ec3c8;
+                cursor: pointer;
+                
+            }
+        }
+    }
+    
+}
+#jar-selection{
+    background-color: #56c4c8;
+}
+
+
+
+
+
